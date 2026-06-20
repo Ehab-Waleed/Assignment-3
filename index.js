@@ -18,7 +18,13 @@ readFileStream.on("data", (chunk) => {
 
 // ******************************************************//
 
+// Core Modules 3 //
 
+const { createGzip } = require("node:zlib")
+const gzip = createGzip()
+readFileStream.pipe(gzip).pipe(fs.createWriteStream("./data.zip"))
+
+// ******************************************************//
 
 
 
