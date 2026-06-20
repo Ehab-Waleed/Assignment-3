@@ -8,6 +8,17 @@ readFileStream.on("data", (chunk) => {
 
 // ******************************************************//
 
+// Core Modules 2 //
+
+const writeFileStream = fs.createWriteStream("./dest.txt")
+readFileStream.on("data", (chunk) => {
+    writeFileStream.write(chunk)    
+    console.log("File copied using stream");
+})
+
+// ******************************************************//
+
+
 
 
 
