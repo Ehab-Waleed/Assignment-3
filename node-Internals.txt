@@ -23,3 +23,10 @@
 ال event loop دا اللوب اللي بيفضل يلف علي ال event queue ويتابع ال call stack واول لما يفضي يبعتله اول call back جاهزه عشان تتنفذ 
 
 // ******************************************************//
+
+5- What is the Node.js Thread Pool and How to Set the Thread Pool Size?
+
+ال thread pool عبارة عن مجموعة من ال virtual therads موجوده في ال libuv بيبقي عددهم الافتراضي 4 ودول بيعملو العمليات ال async اللي بتاخد وقت 
+واقدر اغير عددهم عن طريق اني بروح اغير ال variable اللي اسمه UV_THREADPOOL_SIZE من خلال command line بكتبه في ال terminal وانا بشغل الملف بتاعي زي مثلا ==> UV_THREADPOOL_SIZE=8 node index.js
+
+// ******************************************************//
