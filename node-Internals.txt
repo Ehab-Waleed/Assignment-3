@@ -1,0 +1,5 @@
+1- What is the Node.js Event Loop?
+
+ال event loop هو المحرك الاساسي او القلب بتاع node.js اللي فيه بتتم العمليات ال async بدون ما يحصل block لل main therad ودوره انه بيفضل يتابع ال call stack و ال callback queue واول لما ال call stack يفضي يشوف لو في callbacks جاهزه يبدأ ينفذها
+
+// ******************************************************//
