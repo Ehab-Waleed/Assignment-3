@@ -15,3 +15,11 @@
 اول حاجه ال main therad بياخد العمليه ال async ويروح يبعتها لل libuv بعدين ال libuv بتاخد العمليه دي ي اما تبعتها لل os kernel يعملها بشكل تلقائي زي ال network requests ي اما تبعتها لل virtual therads تعملها ولما ال callback بتاعها يجهز يقوم ال event loop واخدها ومرجعها لل call stack عشان تتنفذ 
 
 // ******************************************************//
+
+4- What is the Difference Between the Call Stack, Event Queue, and Event Loop in Node.js?
+
+ال call stack هو المكان اللي بيتنفذ فيه كود ال js العادي خطوه بخطوه 
+ال event queue  هو الطابور اللي بتقف فيه ال call backs بتاعت العمليات ال async اللي خلصت ومستنيه عشان تتنفذ 
+ال event loop دا اللوب اللي بيفضل يلف علي ال event queue ويتابع ال call stack واول لما يفضي يبعتله اول call back جاهزه عشان تتنفذ 
+
+// ******************************************************//
