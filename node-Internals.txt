@@ -9,3 +9,9 @@
 ال libuv هو c library موجوده في ال node.js بتتعامل مع ال I/O operations وبتدير ال therad pool اللي فيه ال virtual therads بتاخد العمليات ال asyc من ال call stack عشان تنفذها عشان تخليه فاضي بحيث ميحصلش block لل main therad
 
 // ******************************************************//
+
+3- How Does Node.js Handle Asynchronous Operations Under the Hood?
+
+اول حاجه ال main therad بياخد العمليه ال async ويروح يبعتها لل libuv بعدين ال libuv بتاخد العمليه دي ي اما تبعتها لل os kernel يعملها بشكل تلقائي زي ال network requests ي اما تبعتها لل virtual therads تعملها ولما ال callback بتاعها يجهز يقوم ال event loop واخدها ومرجعها لل call stack عشان تتنفذ 
+
+// ******************************************************//
