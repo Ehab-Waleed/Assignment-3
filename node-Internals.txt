@@ -3,3 +3,9 @@
 ال event loop هو المحرك الاساسي او القلب بتاع node.js اللي فيه بتتم العمليات ال async بدون ما يحصل block لل main therad ودوره انه بيفضل يتابع ال call stack و ال callback queue واول لما ال call stack يفضي يشوف لو في callbacks جاهزه يبدأ ينفذها
 
 // ******************************************************//
+
+2- What is Libuv and What Role Does It Play in Node.js?
+
+ال libuv هو c library موجوده في ال node.js بتتعامل مع ال I/O operations وبتدير ال therad pool اللي فيه ال virtual therads بتاخد العمليات ال asyc من ال call stack عشان تنفذها عشان تخليه فاضي بحيث ميحصلش block لل main therad
+
+// ******************************************************//
